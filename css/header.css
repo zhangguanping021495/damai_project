@@ -1,0 +1,274 @@
+@charset 'utf-8';
+#header {
+  width: 100%;
+  height: 72px;
+  box-shadow: 0 2px 16px rgba(220, 220, 220, 0.5);
+}
+#header .head-middle {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+#header .head-middle .con-left img {
+  width: 95px;
+  margin-top: 15px;
+}
+#header .head-middle .con-middle {
+  width: 420px;
+  height: 100%;
+  font-size: 16px;
+}
+#header .head-middle .con-middle .city {
+  display: flex;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+#header .head-middle .con-middle .city .city-pos {
+  position: relative;
+  margin-top: 25px;
+}
+#header .head-middle .con-middle .city .city-pos:hover .city-info {
+  display: block;
+}
+#header .head-middle .con-middle .city .city-pos a {
+  color: #333;
+}
+#header .head-middle .con-middle .city .city-pos a .add {
+  width: 15px;
+  vertical-align: middle;
+}
+#header .head-middle .con-middle .city .city-pos a span {
+  vertical-align: middle;
+}
+#header .head-middle .con-middle .city .city-pos a .chose {
+  width: 10px;
+  vertical-align: middle;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info {
+  display: none;
+  z-index: 22;
+  position: absolute;
+  top: 42px;
+  left: -110px;
+  width: 650px;
+  height: 500px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(220, 220, 220, 0.8);
+}
+#header .head-middle .con-middle .city .city-pos a .city-info::before {
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 138px;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  border: 1px solid transparent;
+  border-left-color: rgba(200, 200, 200, 0.5);
+  border-top-color: rgba(200, 200, 200, 0.5);
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .now-city {
+  width: 100%;
+  height: 40px;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .now-city span {
+  padding: 0 5px;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .now-city span.name {
+  color: #ff1268;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .hot-city {
+  width: 100%;
+  height: 50px;
+  padding: 0 0 20px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .hot-city span {
+  padding: 0 5px;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .hot-city span.name:hover {
+  color: #ff1268;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .else-city {
+  width: 100%;
+  margin-top: 25px;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .else-city p {
+  height: 27px;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .else-city .else-name {
+  margin-left: 95px;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .else-city span {
+  padding: 0 5px;
+}
+#header .head-middle .con-middle .city .city-pos a .city-info .else-city span.name:hover {
+  color: #ff1268;
+}
+#header .head-middle .con-middle .city .msg {
+  line-height: 72px;
+}
+#header .head-middle .con-middle .city .msg a {
+  color: #333;
+}
+#header .head-middle .con-middle .city .msg a:hover {
+  color: #ff1268;
+}
+#header .head-middle .con-middle .city .msg .first {
+  padding-left: 40px;
+  margin-right: 10px;
+  color: #ff1268;
+  box-sizing: border-box;
+}
+#header .head-middle .con-search {
+  position: relative;
+  width: 400px;
+  height: 100%;
+}
+#header .head-middle .con-search input[type="search"] {
+  width: 320px;
+  height: 46px;
+  font-size: 16px;
+  text-indent: 45px;
+  margin-top: 15px;
+  border-radius: 23px 0 0 23px;
+  border: 0;
+  outline: none;
+  border-right: none;
+  background-color: #f8f8f8;
+  border: 1px solid transparent;
+}
+#header .head-middle .con-search input[type="search"]:focus {
+  border-color: #ff1268;
+}
+#header .head-middle .con-search img {
+  position: absolute;
+  width: 16px;
+  left: 14px;
+  top: 30px;
+}
+#header .head-middle .con-search .search {
+  float: right;
+  width: 80px;
+  height: 46px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  line-height: 46px;
+  margin-top: 15px;
+  border-radius: 0 23px 23px 0;
+  background-color: #ff1268;
+  cursor: pointer;
+}
+#header .head-middle .con-msg {
+  width: 285px;
+  height: 100%;
+}
+#header .head-middle .con-msg .msg-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+#header .head-middle .con-msg .msg-list li {
+  height: 72px;
+}
+#header .head-middle .con-msg .msg-list li a img {
+  width: 25px;
+  vertical-align: middle;
+}
+#header .head-middle .con-msg .msg-list li a span {
+  font-size: 16px;
+  vertical-align: middle;
+}
+#header .head-middle .con-msg .msg-list .login {
+  position: relative;
+}
+#header .head-middle .con-msg .msg-list .login:hover .login-list {
+  display: block;
+}
+#header .head-middle .con-msg .msg-list .login a span:hover {
+  color: #ff1268;
+}
+#header .head-middle .con-msg .msg-list .login a .login-list {
+  z-index: 22;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -25px;
+  width: 120px;
+  box-shadow: 0 0 3px rgba(200, 200, 200, 0.5);
+  background-color: #fff;
+}
+#header .head-middle .con-msg .msg-list .login a .login-list li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #000;
+  border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+  text-align: center;
+}
+#header .head-middle .con-msg .msg-list .login a .login-list li::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 58px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid  transparent;
+  border-top-color: rgba(200, 200, 200, 0.5);
+  border-left-color: rgba(200, 200, 200, 0.5);
+  transform: rotate(45deg);
+}
+#header .head-middle .con-msg .msg-list .login a .login-list li:hover {
+  background-color: #fff4f8;
+  color: #ff1268;
+}
+#header .head-middle .con-msg .msg-list .download {
+  position: relative;
+}
+#header .head-middle .con-msg .msg-list .download:hover > a .img {
+  display: block;
+}
+#header .head-middle .con-msg .msg-list .download a:hover {
+  color: #ff1268;
+}
+#header .head-middle .con-msg .msg-list .download a .img {
+  z-index: 22;
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: -10px;
+  width: 90px;
+  height: 90px;
+  box-shadow: 0 0 4px rgba(220, 220, 220, 0.8);
+  background-color: #fff;
+}
+#header .head-middle .con-msg .msg-list .download a .img::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  top: -6px;
+  left: 38px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid  transparent;
+  border-top-color: rgba(200, 200, 200, 0.5);
+  border-left-color: rgba(200, 200, 200, 0.5);
+  transform: rotate(45deg);
+}
+#header .head-middle .con-msg .msg-list .download a .img img {
+  width: 76px;
+  padding: 7px;
+}
+#header .head-middle .con-msg .msg-list .eng a:hover {
+  color: #ff1268;
+}

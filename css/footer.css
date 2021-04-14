@@ -1,0 +1,86 @@
+@charset "utf-8";
+#footer {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+}
+#footer .links-menu {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 36px 0;
+  font-size: 13px;
+}
+#footer .links-menu li {
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+#footer .links-menu li a {
+  color: #000;
+}
+#footer .links-menu li a:hover {
+  color: #ff1268;
+}
+#footer .links-menu li + li {
+  border-left: 1px solid #000;
+}
+#footer .foot-msg {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+#footer .foot-msg .foot-msg-left {
+  width: 310px;
+}
+#footer .foot-msg .foot-msg-left .damai {
+  float: left;
+  margin-top: 25px;
+  cursor: pointer;
+}
+#footer .foot-msg .foot-msg-left .app {
+  float: right;
+}
+#footer .foot-msg .foot-msg-left .app img {
+  width: 92px;
+}
+#footer .foot-msg .foot-msg-left .app p {
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 0;
+}
+#footer .foot-msg .foot-msg-right {
+  width: 800px;
+}
+#footer .foot-msg .foot-msg-right .line-people {
+  margin-bottom: 10px;
+}
+#footer .foot-msg .foot-msg-right .line-people a p {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #ff1268;
+}
+#footer .foot-msg .foot-msg-right .words {
+  margin-top: 5px;
+  font-size: 13px;
+}
+#footer .foot-msg .foot-msg-right .words a {
+  color: #000;
+}
+#footer .foot-msg .foot-msg-right .words a .font:hover {
+  color: #ff1268;
+}
+#footer .foot-msg .foot-msg-right .words span {
+  padding: 0 5px;
+}
+#footer .foot-msg .foot-msg-right .police-img {
+  margin-top: 20px;
+}
+#footer .foot-msg .foot-msg-right .police-img a img {
+  height: 30px;
+}

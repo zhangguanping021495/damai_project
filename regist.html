@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>注册页</title>
+    <style>
+        body,ul,li{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        body{
+            background-color: #434343;
+        }
+      
+        form{
+            width: 400px;
+            height: 370px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 30px #ccc;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, .2);
+            padding: 40px 30px 35px 0;
+            margin:  100px auto ;
+        }
+        form .reg{
+            user-select: none;
+            width: 360px;
+            height: 50px;
+            line-height: 50px;
+            margin-left: 40px;
+            margin-bottom: 30px;
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            border-radius: 20px ;
+            background-color: rgba(0,0,0,.5);
+        }
+        form li{
+           position: relative;
+           height: 30px;
+           color: #fff;
+           text-align:right;
+       }
+       form li input{
+           width: 294px;
+           height: 40px;
+           border: 1px solid #ddd;
+           text-indent: 10px;
+           border-radius: 10px;
+       }
+       form li+li{
+           margin-top: 35px;
+       }
+       form li input.regist{
+           width: 60px;
+           height: 35px;
+           font-size: 14px;
+           color: #fff;
+           background-color:#3C6CB1;
+           cursor: pointer;
+       }
+       form li input.login{
+           width: 230px;
+            height: 35px;
+           font-size: 14px;
+           color: #fff;
+           background-color:#3C6CB1;
+           cursor: pointer;
+       }
+       form ul >li .tips{
+           display: none;
+           position: absolute;
+           top: -8px;
+           right: -270px;
+           width: 260px;
+           height: 55px;
+           line-height: 50px;
+           color: #fff;
+           text-align: left;
+           text-indent: 8px;
+           border-radius: 10px;
+           background-color:#3C6CB1;        
+       }
+       form ul >li .tips::before{
+           position: absolute;
+           content: "";
+           top: 20px;
+           left: -20px;
+           width: 0;
+           height: 0;
+           border: 10px solid transparent;
+           border-right-color:  #3C6CB1;
+       }
+       form ul >li input:focus + div.tips{
+           display: block;
+       }
+     
+    </style>
+</head>
+<body>  
+    <div class="wrap">
+        <form action="" method="">
+            <div class="reg">用户注册</div>
+            <ul>
+                <li>
+                    <label for="username">账号：</label>
+                    <input type="text" name="username" id="username" placeholder="请输入账号">
+                    <div class="tips">用户名必须为4-16个数字或者字母</div>
+                </li>
+                <li>
+                    <label for="pwd">密码：</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="请输入密码">
+                    <div class="tips">密码必须为4-16个数字或者字母</div>
+                </li>
+                <li>
+                    <label for="pwd">密码：</label>
+                    <input type="password" name="pwd" id="pwd" placeholder="请再次输入密码">
+                    <div class="tips">密码必须为4-16个数字或者字母</div>
+                </li>
+                <li>
+                    <label for="email">邮箱：</label>
+                    <input type="email" name="email" id="email" placeholder="输入你的邮箱">
+                    <div class="tips">邮箱必须为4-16个数字或者字母</div>
+                </li>
+               
+                <li class="btn">
+                    <input type="button" name="" id="" value="注册" class="regist"> 
+                    <input type="button" name="" id="" value="我有账号，我要登录" class="login"> 
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>发布页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<style type="text/css">
+		body{
+			background-color: #434343;
+		}
+
+		#container{
+			width: 100%;
+		}
+		#box{
+			width: 1000px;
+			height: 850px;
+			margin: 50px auto;
+			/*background-color: #fff;*/
+
+		}
+		#form{
+			width: 1000px;
+			height: 850px;
+			padding: 20px;
+			margin:auto;
+			box-sizing: border-box;
+			background-color: gray;
+			color: #fff;
+			font-size: 20px;
+			border-radius: 20px;
+			box-shadow: 0 0 20px rgba(255,255,255,1);
+		}
+		#form .tit{
+			width: 580px;
+			height: 70px;
+			margin: auto;
+			background-color: rgba(0,0,0,.3);
+			text-align: center;
+			font-size: 40px;
+			line-height: 70px;
+			border-radius: 20px;
+		}
+		#form ul li{
+			margin-top: 35px;
+			text-align: center;
+		}
+		#form ul li label{
+			font-weight: 600;
+		}
+		#form ul li input{
+			display: inline-block;
+			width: 500px;
+			height: 30px;
+			border: 2px solid transparent;
+			border-radius: 5px;
+			margin-left: 10px;
+			outline: none;
+
+		}
+		#form ul li input:focus{
+			border: 2px solid rgba(0,0,0,1);
+			
+		}
+		#form ul li button{
+			display: inline-block;
+			width: 70px;
+			height: 30px;
+			cursor: pointer;
+		}
+		#form ul li button:hover{
+			color:#ff6700;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="box">
+
+			<form id="form" action="" method="post">
+				<div class="tit">信息发布</div>
+				<ul>
+					<li>
+						<label for="title">标题:</label>
+						<input type="text" name="title" placeholder="请输入标题" id="title">
+					</li>
+					<li>
+						<label for="address">地点:</label>
+						<input type="text" name="address" placeholder="请输入地点" id="address">
+					</li>
+					<li>
+						<label for="time">时间:</label>
+						<input type="text" name="time" placeholder="请输入时间" id="time">
+					</li>
+					<li>
+						<label for="price">价格:</label>
+						<input type="text" name="price" placeholder="请输入价格" id="price">
+					</li>
+					<li>
+						<label for="image">图片:</label>
+						<input type="text" name="image" placeholder="" id="image">
+					</li>
+					<li>
+						<button type="submit" class="sub" name="sub">提交</button>
+						<button type="reset" class="reset" name="reset">重置</button>
+					</li>
+				</ul>
+			</form>	
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,620 @@
+@charset "utf-8";
+#container {
+  width: 100%;
+}
+#container .banner {
+  position: relative;
+  width: 1200px;
+  height: 320px;
+  margin: 0 auto;
+  background-color: #0f0;
+}
+#container .banner .img ul li {
+  display: none;
+}
+#container .banner .img ul .curr {
+  display: block;
+}
+#container .banner .btn {
+  position: absolute;
+  top: 128px;
+  width: 50px;
+  height: 64px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url(../img/banner/icon-slides.png);
+  cursor: pointer;
+}
+#container .banner .btn:hover {
+  background-color: #82287c;
+}
+#container .banner .left {
+  left: 0;
+  background-position: -83px 0;
+}
+#container .banner .right {
+  right: 0;
+  background-position: -117px 0;
+}
+#container .banner .icon {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  margin-left: -40px;
+  width: 140px;
+  height: 20px;
+  cursor: pointer;
+}
+#container .banner .icon li {
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+}
+#container .banner .icon .first {
+  background-color: red;
+}
+#container .nav-menu {
+  width: 1200px;
+  margin: 15px auto 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#container .nav-menu .nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 16px;
+  padding: 23px 0;
+}
+#container .nav-menu .nav-list li {
+  width: 120px;
+}
+#container .nav-menu .nav-list li a {
+  color: rgba(0, 0, 0, 0.8);
+}
+#container .nav-menu .nav-list li a .bg-img {
+  width: 48px;
+  height: 48px;
+  margin: 0 36px;
+  background-image: url(../img/navbar/icons.png);
+  background-size: 100%;
+}
+#container .nav-menu .nav-list li a .bg-img0 {
+  background-position: 0 -10px;
+}
+#container .nav-menu .nav-list li a .bg-img1 {
+  background-position: 0 -75px;
+}
+#container .nav-menu .nav-list li a .bg-img2 {
+  background-position: 0 -135px;
+}
+#container .nav-menu .nav-list li a .bg-img3 {
+  background-position: 0 -193px;
+}
+#container .nav-menu .nav-list li a .bg-img4 {
+  background-position: 0 -250px;
+}
+#container .nav-menu .nav-list li a .bg-img5 {
+  background-position: 0 -305px;
+}
+#container .nav-menu .nav-list li a .bg-img6 {
+  background-position: 0 -368px;
+}
+#container .nav-menu .nav-list li a .bg-img7 {
+  background-position: 0 -428px;
+}
+#container .nav-menu .nav-list li a .bg-img8 {
+  background-position: 0 -488px;
+}
+#container .nav-menu .nav-list li a .bg-img9 {
+  background-position: 0 -545px;
+}
+#container .nav-menu .nav-list li a p {
+  text-align: center;
+}
+#container .nav-menu .nav-list li a p:hover {
+  color: #ff1268;
+}
+#container .singing {
+  width: 1200px;
+  margin: 15px auto 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#container .singing .title {
+  width: 100%;
+  height: 60px;
+}
+#container .singing .title .title-name {
+  float: left;
+  width: 500px;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 0 0 10px;
+  box-sizing: border-box;
+}
+#container .singing .title .find-all {
+  float: right;
+  line-height: 60px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+#container .singing .title .find-all:hover {
+  color: #ff1268;
+}
+#container .singing .sing-content {
+  display: flex;
+  justify-content: space-between;
+}
+#container .singing .sing-content .left {
+  position: relative;
+}
+#container .singing .sing-content .left img {
+  display: block;
+  width: 273px;
+  height: 360px;
+}
+#container .singing .sing-content .left .sing-info {
+  position: absolute;
+  bottom: 0;
+  width: 273px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#container .singing .sing-content .left .sing-info .left-title {
+  font-size: 16px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  color: #fff;
+}
+#container .singing .sing-content .left .sing-info .left-price {
+  color: #fff;
+  font-size: 20px;
+  margin: 18px 0 0 20px;
+}
+#container .singing .sing-content .left .sing-info .left-price .font {
+  font-size: 15px;
+}
+#container .singing .sing-content .left .sing-info p {
+  cursor: pointer;
+}
+#container .singing .sing-content .left .sing-info p:hover {
+  color: #ff1268;
+}
+#container .singing .sing-content .right {
+  width: 870px;
+  height: 360px;
+}
+#container .singing .sing-content .right .sing-menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-flow: row wrap;
+  height: 100%;
+}
+#container .singing .sing-content .right .sing-menu li {
+  width: 273px;
+  height: 160px;
+}
+#container .singing .sing-content .right .sing-menu li a {
+  height: 100%;
+}
+#container .singing .sing-content .right .sing-menu li a .img {
+  float: left;
+}
+#container .singing .sing-content .right .sing-menu li a .img img {
+  display: block;
+  width: 118px;
+  height: 160px;
+}
+#container .singing .sing-content .right .sing-menu li a .msg {
+  float: left;
+  width: 150px;
+  height: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+#container .singing .sing-content .right .sing-menu li a .msg p:hover {
+  color: #ff1268;
+}
+#container .singing .sing-content .right .sing-menu li a .msg > .tit {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+#container .singing .sing-content .right .sing-menu li a .msg > .address {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 0 ;
+}
+#container .singing .sing-content .right .sing-menu li a .msg > .time {
+  color: rgba(0, 0, 0, 0.5);
+}
+#container .singing .sing-content .right .sing-menu li a .msg > .price {
+  color: #ff1268;
+  font-size: 16px;
+  margin-top: 52px;
+}
+#container .singing .sing-content .right .sing-menu li a .msg > .price .font {
+  font-size: 13px;
+  font-weight: bold;
+}
+#container .opera-drama {
+  width: 1200px;
+  margin: 15px auto 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#container .opera-drama .title {
+  width: 100%;
+  height: 60px;
+}
+#container .opera-drama .title .title-name {
+  float: left;
+  width: 500px;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 0 0 10px;
+  box-sizing: border-box;
+}
+#container .opera-drama .title .find-all {
+  float: right;
+  line-height: 60px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+#container .opera-drama .title .find-all:hover {
+  color: #ff1268;
+}
+#container .opera-drama .opera-drama-content {
+  display: flex;
+  justify-content: space-between;
+}
+#container .opera-drama .opera-drama-content .left {
+  position: relative;
+}
+#container .opera-drama .opera-drama-content .left img {
+  display: block;
+  width: 273px;
+  height: 360px;
+}
+#container .opera-drama .opera-drama-content .left .sing-info {
+  position: absolute;
+  bottom: 0;
+  width: 273px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#container .opera-drama .opera-drama-content .left .sing-info .left-title {
+  font-size: 16px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  color: #fff;
+}
+#container .opera-drama .opera-drama-content .left .sing-info .left-price {
+  color: #fff;
+  font-size: 20px;
+  margin: 18px 0 0 20px;
+}
+#container .opera-drama .opera-drama-content .left .sing-info .left-price .font {
+  font-size: 15px;
+}
+#container .opera-drama .opera-drama-content .left .sing-info p {
+  cursor: pointer;
+}
+#container .opera-drama .opera-drama-content .left .sing-info p:hover {
+  color: #ff1268;
+}
+#container .opera-drama .opera-drama-content .right {
+  width: 870px;
+  height: 360px;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-flow: row wrap;
+  height: 100%;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li {
+  width: 273px;
+  height: 160px;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a {
+  height: 100%;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .img {
+  float: left;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .img img {
+  display: block;
+  width: 118px;
+  height: 160px;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .msg {
+  float: left;
+  width: 150px;
+  height: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .msg p:hover {
+  color: #ff1268;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .msg > .tit {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .msg > .address {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 0 ;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .msg > .time {
+  color: rgba(0, 0, 0, 0.5);
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .msg > .price {
+  color: #ff1268;
+  font-size: 16px;
+  margin-top: 52px;
+}
+#container .opera-drama .opera-drama-content .right .opera-drama-menu li a .msg > .price .font {
+  font-size: 13px;
+  font-weight: bold;
+}
+#container .sports {
+  width: 1200px;
+  margin: 15px auto 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#container .sports .title {
+  width: 100%;
+  height: 60px;
+}
+#container .sports .title .title-name {
+  float: left;
+  width: 500px;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 0 0 10px;
+  box-sizing: border-box;
+}
+#container .sports .title .find-all {
+  float: right;
+  line-height: 60px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+#container .sports .title .find-all:hover {
+  color: #ff1268;
+}
+#container .sports .sports-content {
+  display: flex;
+  justify-content: space-between;
+}
+#container .sports .sports-content .left {
+  position: relative;
+}
+#container .sports .sports-content .left img {
+  display: block;
+  width: 273px;
+  height: 360px;
+}
+#container .sports .sports-content .left .sing-info {
+  position: absolute;
+  bottom: 0;
+  width: 273px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#container .sports .sports-content .left .sing-info .left-title {
+  font-size: 16px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  color: #fff;
+}
+#container .sports .sports-content .left .sing-info .left-price {
+  color: #fff;
+  font-size: 20px;
+  margin: 18px 0 0 20px;
+}
+#container .sports .sports-content .left .sing-info .left-price .font {
+  font-size: 15px;
+}
+#container .sports .sports-content .left .sing-info p {
+  cursor: pointer;
+}
+#container .sports .sports-content .left .sing-info p:hover {
+  color: #ff1268;
+}
+#container .sports .sports-content .right {
+  width: 870px;
+  height: 360px;
+}
+#container .sports .sports-content .right .sports-menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-flow: row wrap;
+  height: 100%;
+}
+#container .sports .sports-content .right .sports-menu li {
+  width: 273px;
+  height: 160px;
+}
+#container .sports .sports-content .right .sports-menu li a {
+  height: 100%;
+}
+#container .sports .sports-content .right .sports-menu li a .img {
+  float: left;
+}
+#container .sports .sports-content .right .sports-menu li a .img img {
+  display: block;
+  width: 118px;
+  height: 160px;
+}
+#container .sports .sports-content .right .sports-menu li a .msg {
+  float: left;
+  width: 150px;
+  height: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+#container .sports .sports-content .right .sports-menu li a .msg p:hover {
+  color: #ff1268;
+}
+#container .sports .sports-content .right .sports-menu li a .msg > .tit {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+#container .sports .sports-content .right .sports-menu li a .msg > .address {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 0 ;
+}
+#container .sports .sports-content .right .sports-menu li a .msg > .time {
+  color: rgba(0, 0, 0, 0.5);
+}
+#container .sports .sports-content .right .sports-menu li a .msg > .price {
+  color: #ff1268;
+  font-size: 16px;
+  margin-top: 52px;
+}
+#container .sports .sports-content .right .sports-menu li a .msg > .price .font {
+  font-size: 13px;
+  font-weight: bold;
+}
+#container .child {
+  width: 1200px;
+  margin: 15px auto 30px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#container .child .title {
+  width: 100%;
+  height: 60px;
+}
+#container .child .title .title-name {
+  float: left;
+  width: 500px;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 0 0 10px;
+  box-sizing: border-box;
+}
+#container .child .title .find-all {
+  float: right;
+  line-height: 60px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+#container .child .title .find-all:hover {
+  color: #ff1268;
+}
+#container .child .child-content {
+  display: flex;
+  justify-content: space-between;
+}
+#container .child .child-content .left {
+  position: relative;
+}
+#container .child .child-content .left img {
+  display: block;
+  width: 273px;
+  height: 360px;
+}
+#container .child .child-content .left .sing-info {
+  position: absolute;
+  bottom: 0;
+  width: 273px;
+  height: 130px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#container .child .child-content .left .sing-info .left-title {
+  font-size: 16px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  color: #fff;
+}
+#container .child .child-content .left .sing-info .left-price {
+  color: #fff;
+  font-size: 20px;
+  margin: 18px 0 0 20px;
+}
+#container .child .child-content .left .sing-info .left-price .font {
+  font-size: 15px;
+}
+#container .child .child-content .left .sing-info p {
+  cursor: pointer;
+}
+#container .child .child-content .left .sing-info p:hover {
+  color: #ff1268;
+}
+#container .child .child-content .right {
+  width: 870px;
+  height: 360px;
+}
+#container .child .child-content .right .child-menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-flow: row wrap;
+  height: 100%;
+}
+#container .child .child-content .right .child-menu li {
+  width: 273px;
+  height: 160px;
+}
+#container .child .child-content .right .child-menu li a {
+  height: 100%;
+}
+#container .child .child-content .right .child-menu li a .img {
+  float: left;
+}
+#container .child .child-content .right .child-menu li a .img img {
+  display: block;
+  width: 118px;
+  height: 160px;
+}
+#container .child .child-content .right .child-menu li a .msg {
+  float: left;
+  width: 150px;
+  height: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+#container .child .child-content .right .child-menu li a .msg p:hover {
+  color: #ff1268;
+}
+#container .child .child-content .right .child-menu li a .msg > .tit {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+}
+#container .child .child-content .right .child-menu li a .msg > .address {
+  color: rgba(0, 0, 0, 0.5);
+  padding: 5px 0 ;
+}
+#container .child .child-content .right .child-menu li a .msg > .time {
+  color: rgba(0, 0, 0, 0.5);
+}
+#container .child .child-content .right .child-menu li a .msg > .price {
+  color: #ff1268;
+  font-size: 16px;
+  margin-top: 52px;
+}
+#container .child .child-content .right .child-menu li a .msg > .price .font {
+  font-size: 13px;
+  font-weight: bold;
+}

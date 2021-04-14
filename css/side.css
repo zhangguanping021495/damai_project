@@ -1,0 +1,89 @@
+@charset "utf-8";
+#side {
+  position: fixed;
+  right: 0;
+  top: 60%;
+  width: 80px;
+  height: 140px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#side .download-app {
+  position: relative;
+  width: 100%;
+  height: 69px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#side .download-app:hover .img-app {
+  display: block;
+}
+#side .download-app p {
+  text-align: center;
+  cursor: pointer;
+}
+#side .download-app .damai {
+  padding-top: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #ff1268;
+  font-weight: bold;
+}
+#side .download-app .app-down {
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+#side .download-app .app-down:hover {
+  color: #ff1268;
+}
+#side .download-app .img-app {
+  display: none;
+  z-index: 22;
+  position: absolute;
+  top: -5px;
+  left: -110px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+#side .download-app .img-app::before {
+  position: absolute;
+  top: 37px;
+  right: -6px;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.2);
+  border-right-color: rgba(0, 0, 0, 0.2);
+  transform: rotate(45deg);
+}
+#side .download-app .img-app img {
+  width: 90px;
+  padding: 5px;
+}
+#side .top {
+  width: 100%;
+  height: 69px;
+}
+#side .top p {
+  text-align: center;
+  cursor: pointer;
+}
+#side .top .icon {
+  width: 20px;
+  height: 20px;
+  margin: 15px 0 0 30px;
+  line-height: 25px;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+#side .top .back-top {
+  padding: 10px 0;
+}
+#side .top .back-top a {
+  color: #000;
+}
+#side .top .back-top a:hover {
+  color: #ff1268;
+}

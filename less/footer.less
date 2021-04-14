@@ -1,0 +1,96 @@
+@charset "utf-8";
+#footer{
+    width: 100%;
+    // height: 365px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+    .links-menu{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        padding: 36px 0;
+        font-size: 13px;
+        li{
+            padding: 0 25px;
+            box-sizing: border-box;
+            a{
+                color: #000;
+                &:hover{
+                    color: #ff1268;
+                }
+            }
+        }
+        li+li{
+            border-left: 1px solid #000;
+        }
+    }
+    .foot-msg{
+        display: flex;
+        justify-content: space-between;
+        width: 1200px;
+        margin: 0 auto;
+        .foot-msg-left{
+            width: 310px;
+            .damai{
+                float: left;
+                margin-top: 25px;
+                cursor: pointer;
+            }
+            .app{
+                float: right;
+                img{
+                    width: 92px;
+                }
+                p{
+                    text-align: center;
+                    font-size: 14px;
+                    padding: 8px 0;
+                }
+            }
+        }
+        .foot-msg-right{
+            width: 800px;
+            .line-people{
+                margin-bottom: 10px;
+                a{
+                    p{
+                        width: 100px;
+                        height: 30px;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 30px;
+                        border-radius: 30px;
+                        color: #fff;
+                        background-color: #ff1268;
+                    }
+                }
+            }
+            .words{
+                margin-top: 5px;
+                font-size: 13px;
+                a{
+                    color: #000;
+                    .font{
+                        &:hover{
+                            color: #ff1268;
+                        }
+                    }
+                    
+                }
+                span{
+                    padding: 0 5px;
+                }
+                
+            }
+            .police-img{
+                margin-top: 20px;
+                a{
+                    img{
+                        height: 30px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sing.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/side.css">
+    <script src="./js/djs.js"></script>
+    <script src="./js/vue.js"></script>
+    <title>内容页</title>
+</head>
+<body>
+    <header id="header">
+        <div class="head-middle">
+            <div class="con-left">
+                <img src="./img/header/logo.png" alt="">
+            </div>
+            <div class="con-middle">
+                <ul class="city">
+                    <li class="city-pos">
+                        <a href="">
+                            <img class="add" src="./img/header/icon02.png" alt="">
+                            <span>全国</span>
+                            <img class="chose" src="./img/header/icon01.png" alt="">
+                            <div class="city-info">
+                                <div class="now-city">
+                                    <span>当前城市：</span>
+                                    <span class="name">全国</span>
+                                </div>
+                                <div class="hot-city">
+                                    <span>热门城市：</span>
+                                    <span class="name">全国</span>
+                                    <span class="name">北京</span>
+                                    <span class="name">上海</span>
+                                    <span class="name">深圳</span>
+                                    <span class="name">广州</span>
+                                    <span class="name">杭州</span>
+                                    <span class="name">天津</span>
+                                    <span class="name">重庆</span>
+                                    <span class="name">成都</span>
+                                    <span class="name">中国香港</span>
+                                </div>
+                                <div class="else-city">
+                                    <p>
+                                        <span>其他城市：</span>
+                                        <span class="name">上海</span>
+                                        <span class="name">北京</span>
+                                        <span class="name">成都</span>
+                                        <span class="name">杭州</span>
+                                        <span class="name">深圳</span>
+                                        <span class="name">天津</span>
+                                        <span class="name">广州</span>
+                                        <span class="name">南京</span>
+                                        <span class="name">苏安</span>
+                                        <span class="name">西安</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">武汉</span>
+                                        <span class="name">重庆</span>
+                                        <span class="name">青岛</span>
+                                        <span class="name">大连</span>
+                                        <span class="name">长沙</span>
+                                        <span class="name">沈阳</span>
+                                        <span class="name">宁波</span>
+                                        <span class="name">郑州</span>
+                                        <span class="name">合肥</span>
+                                        <span class="name">厦门</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">哈尔滨</span>
+                                        <span class="name">昆明</span>
+                                        <span class="name">无锡</span>
+                                        <span class="name">太原</span>
+                                        <span class="name">佛山</span>
+                                        <span class="name">南宁</span>
+                                        <span class="name">济南</span>
+                                        <span class="name">珠海</span>
+                                        <span class="name">南昌</span>
+                                        <span class="name">长春</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">呼和浩特</span>
+                                        <span class="name">海口</span>
+                                        <span class="name">石家庄</span>
+                                        <span class="name">福州</span>
+                                        <span class="name">绍兴</span>
+                                        <span class="name">惠州</span>
+                                        <span class="name">烟台</span>
+                                        <span class="name">常州</span>
+                                        <span class="name">凉山</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">贵阳</span>
+                                        <span class="name">包头</span>
+                                        <span class="name">衡水</span>
+                                        <span class="name">马鞍山</span>
+                                        <span class="name">泉州</span>
+                                        <span class="name">株洲</span>
+                                        <span class="name">东莞</span>
+                                        <span class="name">吉安</span>
+                                        <span class="name">廊坊</span>
+                                        <span class="name">南通</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">唐山</span>
+                                        <span class="name">兰州</span>
+                                        <span class="name">丽水</span>
+                                        <span class="name">中山</span>
+                                        <span class="name">遵义</span>
+                                        <span class="name">黄冈</span>
+                                        <span class="name">江门</span>
+                                        <span class="name">聊城</span>
+                                        <span class="name">柳州</span>
+                                        <span class="name">银川</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">舟山</span>
+                                        <span class="name">滨州</span>
+                                        <span class="name">抚州</span>
+                                        <span class="name">济宁</span>
+                                        <span class="name">洛阳</span>
+                                        <span class="name">宁德</span>
+                                        <span class="name">鄂尔多斯</span>
+                                        <span class="name">河源</span>
+                                        <span class="name">嘉兴</span>
+                                        <span class="name">金华</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">六盘水</span>
+                                        <span class="name">营口</span>
+                                        <span class="name">鞍山</span>
+                                        <span class="name">安康</span>
+                                        <span class="name">北海</span>
+                                        <span class="name">大理</span>
+                                        <span class="name">广州</span>
+                                        <span class="name">吉林</span>
+                                        <span class="name">九江</span>
+                                        <span class="name">辽阳</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">临溪</span>
+                                        <span class="name">台州</span>
+                                        <span class="name">徐州</span>
+                                        <span class="name">宜唱</span>
+                                        <span class="name">桂林</span>
+                                        <span class="name">湖州</span>
+                                        <span class="name">丽江</span>
+                                        <span class="name">梅州</span>
+                                        <span class="name">三亚</span>
+                                        <span class="name">宿迁</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">泰安</span>
+                                        <span class="name">泰州</span>
+                                        <span class="name">温州</span>
+                                        <span class="name">乌鲁木齐</span>
+                                        <span class="name">芜湖</span>
+                                        <span class="name">新乡</span>
+                                        <span class="name">兴安盟</span>
+                                        <span class="name">盐城</span>
+                                        <span class="name">中国澳门</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">中国香港</span>
+                                        <span class="name">雷州</span>
+                                        <span class="name">保定</span>
+                                        <span class="name">沧州</span>
+                                        <span class="name">达州</span>
+                                        <span class="name">淮北</span>
+                                        <span class="name">拉萨</span>
+                                        <span class="name">乐山</span>
+                                        <span class="name">连云港</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">陵水</span>
+                                        <span class="name">绵阳</span>
+                                        <span class="name">南充</span>
+                                        <span class="name">萍乡</span>
+                                        <span class="name">通化</span>
+                                        <span class="name">咸阳</span>
+                                        <span class="name">邢台</span>
+                                        <span class="name">宜春</span>
+                                        <span class="name">岳阳</span>
+                                        <span class="name">张家口</span>
+                                    </p>
+                                    <p class="else-name">
+                                        <span class="name">湛江</span>
+                                        <span class="name">淄博</span>
+                                        <span class="name">国际及港澳台</span>
+                                    </p>
+
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>   
+                    <li class="msg">
+                        <a href="index.html" class="first">首页</a>
+                        <a href="">分类</a>
+                    </li>                  
+                </ul>
+            </div>
+            <div class="con-search">
+                <img src="./img/header/icon04.png" alt="" >
+                <input type="search" name="" placeholder="搜索明星、演出、体育赛事">
+                <div class="search">搜索</div>
+            </div>
+            <div class="con-msg">
+                <ul class="msg-list">
+                    <li class="login">
+                        <a href="login.html">
+                            <img src="./img/header/icon06.png" alt="">
+                            <span>登录</span>
+                           
+                                <ul class="login-list">
+                                    <li>个人信息</li>
+                                    <li>账号设置</li>
+                                    <li>订单管理</li>
+                                </ul>
+                        </a>
+                    </li>
+                    <li class="download">
+                        <a href="">
+                            <img src="./img/header/icon03.png" alt="">
+                            <span>注册</span>
+                            <div class="img"><img src="./img/header/erweima.jpg" alt=""></div>
+                        </a>
+                    </li>
+                    <li class="eng">
+                        <a href="">
+                            <img src="./img/header/icon05.png" alt="">
+                            <span>English</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </header>
+
+    <div id="sing">
+        <div class="sing-cont">
+            <div class="cont-left">
+                <div class="main-info">
+                    <div class="img"><img src="./img/singing/01.webp" alt=""></div>
+                    <div class="info">
+                        <span class="tip">总票代</span>
+                        <span class="h2">【海口】海南LZ King（荔枝王）国际文化音乐节</span>
+                        <p class="time">时间：2020.12.26 周六 14:00</p>
+                        <p class="addr">场馆：海口市 | 长影环球100奇幻乐园</p>
+                        <div class="begin-time">
+                            <h4>项目开售倒计时</h4>
+                            <ul class="time-list">
+                                <li>
+                                    <img src="" alt="" class="imgdown" style="width:10px;height:30px;margin-top:10px;">
+                                    <img src="" alt="" class="imgdown" style="width:10px;height:30px;margin-top:10px;">
+                                    <p class="date-name">天</p>
+                                </li>
+                                <li>
+                                    <img src="" alt="" class="imgdown" style="width:10px;height:30px;margin-top:10px;">
+                                    <img src="" alt="" class="imgdown" style="width:10px;height:30px;margin-top:10px;">
+                                    <p class="date-name">时</p>
+                                </li>
+                                <li>
+                                    <img src="" alt="" class="imgdown" style="width:10px;height:30px;margin-top:10px;">
+                                    <img src="" alt="" class="imgdown" style="width:10px;height:30px;margin-top:10px;">
+                                    <p class="date-name">分</p>
+                                </li>
+                                <li>
+                                    <img src="" alt="" class="imgdown" style="width:10px;height:30px;margin-top:10px;">
+                                    <img src="" alt="" class="imgdown" style="width:10px;height:30px;margin-top:10px;">
+                                    <p class="date-name">秒</p>
+                                </li>
+                            </ul>
+                            <p class="sell-time">开售时间：2021年1月1日 00:00</p>
+                            <p class="attention"><span>!</span>场次时间均为演出当地时间</p>
+                            <div class="select-top">
+                                <span class="h4">场次</span> 
+                                <span class="timer">2020-12-26 周六 13:30</span>
+                            </div>
+                            <div class="select-bottom">
+                                <span class="h4">票档</span>
+                                <div class="price-list price_list">
+                                    <span class="priced price-one priceItem">学生票268元</span>
+                                    <span class="priced price-two">早鸟票318元</span>
+                                    <span class="priced price-three">普通票398元</span>
+                                    <span class="priced price-four">VIP票618元</span>
+                                    <div class="ready">即将开始</div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="produce">
+                    <ul>
+                        <li class="msg">项目详情</li>
+                        <li class="buy">购票须知</li>
+                        <li class="visit">观演须知</li>
+                    </ul>
+                </div>
+                <div class="to-produce">
+                    <h2>演出介绍</h2>
+                    <div class="detile">
+                        <h3>海南LZ King（荔枝王）国际文化音乐节</h3>
+                        <ul class="text">
+                            <li>初心不逾，热爱不止</li>
+                            <li>用说唱表达态度</li>
+                            <li>用热爱无畏前行</li>
+                            <li>年轻与热血的火花</li>
+                            <li>说唱与潮流的碰撞</li>
+                            <li>不管是Keep Real</li>
+                            <li>还是Peace And Love</li>
+                            <li>不管前方是坦途还是荆棘满路</li>
+                            <li>热爱说唱的我们会怕吗？</li>
+                            <li>当然不会！</li>
+                            <li>禁止定式flow，有音乐就能hold住全场</li>
+                            <li>你抑制已久的灵魂即将得到释放</li>
+                            <li>......</li>
+                        </ul>
+                        <p><img src="./img/singing/02.webp" alt=""></p>
+                        <p>全.阵.容.公.布</p>
+                        <p><img src="./img/singing/03.webp" alt=""></p>
+                        <p>
+                            将内心的思绪写作押韵的语句，再说唱给世界聆听；
+                            将内心的情绪用作电音的铺垫，再表演给世界感受；
+                            言语的表达将抚摸你的心灵，电音的汹涌将敲击你的心脏！
+                        </p>
+                        <p><img src="./img/singing/04.webp" alt=""></p>
+                        <p><img src="./img/singing/05.webp" alt=""></p>
+                        <p><img src="./img/singing/06.webp" alt=""></p>
+                        <p><img src="./img/singing/07.webp" alt=""></p>
+                        <p><img src="./img/singing/08.webp" alt=""></p>
+                        <p><img src="./img/singing/09.webp" alt=""></p>
+                        <p><img src="./img/singing/10.webp" alt=""></p>
+                        <p><img src="./img/singing/11.webp" alt=""></p>
+                        <p><img src="./img/singing/12.webp" alt=""></p>
+                        <p><img src="./img/singing/13.webp" alt=""></p>
+                        <p><img src="./img/singing/14.webp" alt=""></p>
+                        <p><img src="./img/singing/15.webp" alt=""></p>
+                        <p><img src="./img/singing/16.webp" alt=""></p>
+                        <p><img src="./img/singing/17.webp" alt=""></p>
+                        <p><img src="./img/singing/18.webp" alt=""></p>
+                        <p><img src="./img/singing/19.webp" alt=""></p>
+                        <p><img src="./img/singing/20.webp" alt=""></p>
+                        <p><img src="./img/singing/21.webp" alt=""></p>
+                        <p><img src="./img/singing/22.webp" alt=""></p>
+                        <p><img src="./img/singing/23.webp" alt=""></p>
+                        <p><img src="./img/singing/24.webp" alt=""></p>
+                        <p><img src="./img/singing/25.webp" alt=""></p>
+                        <p><img src="./img/singing/26.webp" alt=""></p>
+                        <p><img src="./img/singing/27.webp" alt=""></p>
+                        <p><img src="./img/singing/28.webp" alt=""></p>
+                        <p><img src="./img/singing/29.webp" alt="" width="600"></p>
+                        <p><img src="./img/singing/30.webp" alt="" width="600"></p>
+                        <p><img src="./img/singing/31.webp" alt="" width="600"></p>
+                        <p><img src="./img/singing/32.webp" alt="" width="600"></p>
+                        
+                        <p>超.值.票.务.福.利</p>
+                        <p>1、凭音乐节门票可免费享受周杰伦嘉年华主题沉浸快闪入场优惠</p>
+                        <p><img src="./img/singing/33.webp" alt=""></p>
+                        <p>海南LZ King（荔枝王）国际文化音乐节与周杰伦嘉年华主题沉浸快闪结合，让你和你的homie不仅有狂欢还有回忆！周杰伦mv超跑将在音乐节现场首次亮相，体验周杰伦用过的跑车，享受在跑车里跨时空与周杰伦相遇的美好！</p>
+                        <p><img src="./img/singing/34.webp" alt=""></p>
+                        <p>以荔枝为元素打造荔枝国潮品牌，还有丰富的嘉年华周边。更多花YOUNG玩法，等你来解锁！</p>
+                    
+                        <p>2、凭音乐节门票可免费享受长影环球100奇幻乐园当日通园</p>
+                        <p><img src="./img/singing/35.webp" alt=""></p>
+                        <p>票.种.区.域.规.划</p>
+                        <p><img src="./img/singing/36.webp" alt=""></p>
+                        <p>海南本土音乐IP</p>
+                        <p>2020年全国第一场纯说唱音乐节</p>
+                        <p>海口首次纯说唱音乐节</p>
+                        <p>邀你12月26日</p>
+                        <p>在海口市长影环球100奇幻乐园欢乐岛</p>
+                        <p>跟着LZ King燥个不停！</p>
+                        <p><img src="./img/singing/37.webp" alt=""></p>
+                       
+                        
+                    </div>
+                    <h2>观演须知</h2>
+                    <div class="visited-kown">
+                        <div class="list">
+                            <p class="pro">演出时长</p>
+                            <p class="info">7个小时以上</p>
+                        </div>
+                        <div class="list">
+                            <p class="pro">入场时间</p>
+                            <p class="info">请于开始前约30分钟入场</p>
+                        </div>
+                        <div class="list">
+                            <p class="pro">最低演出曲目</p>
+                            <p class="info">以现场为准</p>
+                        </div>
+                        <div class="list">
+                            <p class="pro">主要演员</p>
+                            <p class="info">小鬼-王琳凯、Tizzy T、404RAPPER、J.zen 朱星杰、王齐铭、GALI、 李大奔、KC、连麻Swimming、KIWI刘伟航 、DJ WU$U、DJ JOY</p>
+                        </div>
+                        <div class="list">
+                            <p class="pro">最低演出时长</p>
+                            <p class="info">7小时</p>
+                        </div>
+                        <div class="list">
+                            <p class="pro">禁止携带物品</p>
+                            <p class="info">由于安保和版权的原因，大多数演出、展览及比赛场所禁止携带食品、饮料、专业摄录设备、打火机等物品，请您注意现场工作人员和广播的提示，予以配合。</p>
+                        </div>
+                        <div class="list">
+                            <p class="pro">寄存说明</p>
+                            <p class="info">无寄存处,请自行保管携带物品，谨防贵重物品丢失。</p>
+                        </div>
+                        <div class="list">
+                            <p class="pro">大麦网初始开售时全场可售门票总张数</p>
+                            <p class="info">10000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="sport-right">
+                <div class="service">
+                    <div class="not-surport">
+                        <div>不支持退</div>
+                        <p> 票品为有价证券，非普通商品，其背后承载的文化服务具有时效性，稀缺性等特征，不支持退换。</p>
+                    </div>
+                    <div class="not-surport">
+                        <div> 实名制观演</div>
+                        <p> 本项目需实名制购票及入场，观演请本人携带购票时填写证件验证入场</p>
+                    </div>
+                    <div class="not-surport">
+                        <div>电子票</div>
+                        <p> 电子票：通过票夹中的二维码或身份证，可以直接验票入场（具体以下单后票夹信息为准）</p>
+                    </div>
+                    <div class="not-surport">
+                        <div>纸质发票 </div>
+                        <p> 该项目支持开具纸质发票，请您在演出开始前通过订单页补开，发票将在演出结束后1个月左右，统一由主办方提供</p>
+                    </div>
+                    <div class="saoma">
+                        <div>
+                            手机扫一扫 <br> 下单更快捷
+                        </div>
+                        <div>
+                            <img src="img/content/10.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="recomment">
+                    <h3>为你推荐</h3>
+                    <div class="tuijian">
+                        <div class="recomment-l">
+                            <img src="img/content/10.webp" alt="">
+                        </div>
+                        <div class="recomment-r">
+                            <div class="station">都不酷脱口秀：圣诞大赞 台州站</div>
+                            <div class="place">
+                                台州 | 黄色潜水艇酒吧-椒江店
+                                <p>2020.12.26 周六 19:30</p>
+                            </div>
+                            <div class="price">¥99.0</div>
+                        </div>
+                    </div>
+                    <div class="tuijian">
+                        <div class="recomment-l">
+                            <img src="img/content/11.webp" alt="">
+                        </div>
+                        <div class="recomment-r">
+                            <div class="station">都不酷脱口秀：圣诞大赞 台州站</div>
+                            <div class="place">
+                                台州 | 黄色潜水艇酒吧-椒江店
+                                <p>2020.12.26 周六 19:30</p>
+                            </div>
+                            <div class="price">¥99.0</div>
+                        </div>
+                    </div>
+    
+                    <div class="tuijian">
+                        <div class="recomment-l">
+                            <img src="img/content/12.webp" alt="">
+                        </div>
+                        <div class="recomment-r">
+                            <div class="station">都不酷脱口秀：圣诞大赞 台州站</div>
+                            <div class="place">
+                                台州 | 黄色潜水艇酒吧-椒江店
+                                <p>2020.12.26 周六 19:30</p>
+                            </div>
+                            <div class="price">¥99.0</div>
+                        </div>
+                    </div>
+                    <div class="tuijian">
+                        <div class="recomment-l">
+                            <img src="img/content/13.webp" alt="">
+                        </div>
+                        <div class="recomment-r">
+                            <div class="station">都不酷脱口秀：圣诞大赞 台州站</div>
+                            <div class="place">
+                                台州 | 黄色潜水艇酒吧-椒江店
+                                <p>2020.12.26 周六 19:30</p>
+                            </div>
+                            <div class="price">¥99.0</div>
+                        </div>
+                    </div>
+                    <div class="tuijian">
+                        <div class="recomment-l">
+                            <img src="img/content/15.webp" alt="">
+                        </div>
+                        <div class="recomment-r">
+                            <div class="station">都不酷脱口秀：圣诞大赞 台州站</div>
+                            <div class="place">
+                                台州 | 黄色潜水艇酒吧-椒江店
+                                <p>2020.12.26 周六 19:30</p>
+                            </div>
+                            <div class="price">¥99.0</div>
+                        </div>
+                    </div>
+                    <div class="tuijian">
+                        <div class="recomment-l">
+                            <img src="img/content/14.webp" alt="">
+                        </div>
+                        <div class="recomment-r">
+                            <div class="station">都不酷脱口秀：圣诞大赞 台州站</div>
+                            <div class="place">
+                                台州 | 黄色潜水艇酒吧-椒江店
+                                <p>2020.12.26 周六 19:30</p>
+                            </div>
+                            <div class="price">¥99.0</div>
+                        </div>
+                    </div>
+                    <div class="tuijian">
+                        <div class="recomment-l">
+                            <img src="img/content/13.webp" alt="">
+                        </div>
+                        <div class="recomment-r">
+                            <div class="station">都不酷脱口秀：圣诞大赞 台州站</div>
+                            <div class="place">
+                                台州 | 黄色潜水艇酒吧-椒江店
+                                <p>2020.12.26 周六 19:30</p>
+                            </div>
+                            <div class="price">¥99.0</div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="foot-links">
+            <ul class="links-menu">
+                <li><a href="">帮助中心</a></li>
+                <li><a href="">公司介绍</a></li>
+                <li><a href="">品牌识别</a></li>
+                <li><a href="">公司大事记</a></li>
+                <li><a href="">协议及隐私政策</a></li>
+                <li><a href="">廉政举报</a></li>
+                <li><a href="">练习合作</a></li>
+                <li><a href="">招聘信息</a></li>
+                <li><a href="">防骗秘籍</a></li>
+            </ul>
+        </div>
+        <div class="foot-msg">
+            <div class="foot-msg-left clearfix">
+                <div class="damai"><img src="./img/footer/foot02.png" alt=""></div>
+                <div class="app">
+                    <img src="./img/footer/app.jpg" alt="">
+                    <p>APP下载</p>
+                </div>
+            </div>
+            <div class="foot-msg-right">
+                <ul>
+                    <li class="line-people">
+                        <a href=""> 
+                            <p>在线客服</p>
+                        </a>
+                    </li>
+                    <li class="words">
+                        <a href="">
+                           <span class="font">京ICP证031057号</span><span>|</span><span class="font">京ICP备11043884号</span><span>|</span><span class="font">京公网安备11010502037341号</span><span>|</span><span class="font">广播电视节目制作经营许可证(京)字第02253号</span>
+                        </a>
+                    </li>
+                    <li class="words">
+                        <a href="">
+                           <span class="font">网络文化经营许可证 京网文[2019]4082-420号</span><span>|</span><span class="font">营业性演出许可证京市演587号</span>
+                        </a>
+                    </li>
+                    <li class="words">
+                        <span class="font">北京红马传媒文化发展有限公司 版权所有</span><span>|</span><span class="font">大麦网</span> <span>|</span><span class="font">Copyright 2003-2020 All Rights Reserved</span>
+                    </li>
+                    <li class="words">
+                        <span class="font">举报投诉：damai_tousu@member.alibaba.com   浙江省杭州市余杭区文一西路969号</span>
+                    </li>
+                    <li class="words">
+                        <span class="font">违法不良信息举报电话：020-62108294</span>
+                    </li>
+                    <li class="police-img">
+                        <a href=""><img src="./img/footer/foot04.png" alt=""></a>                    
+                        <a href=""><img src="./img/footer/foot01.png" alt=""></a>                        
+                        <a href=""><img src="./img/footer/foot03.png" alt="">  </a>                    
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div id="side">
+        <div class="download-app">
+            <p class="damai">大麦</p>
+            <p class="app-down">app下载</p>
+            <div class="img-app">
+                <img src="./img/side/erweima.jpg" alt="">
+            </div>
+        </div>
+        <div class="top">
+            <p class="icon">^</p>
+            <p class="back-top"><a href="#header"> 回到顶部</a></p>
+        </div>
+    </div>
+    <script>
+        var father = document.getElementsByClassName('price_list')[0];
+        // console.log(father);
+        var prices = document.getElementsByClassName('priced');
+        // console.log(prices);
+        var len = prices.length;
+        
+        for(var i = 0;i<len;i++){     
+
+            prices[i].onclick = function(){
+                // alert("yes")
+                // console.log(this);
+                // console.log(i);
+                father.querySelector('.priceItem').classList.remove('priceItem');
+                this.classList.add('priceItem');
+            }
+            
+        }
+    </script>
+
+
+</body>
+</html>
